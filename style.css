@@ -1,0 +1,27 @@
+header{
+    color: Gold;
+    grid-area: header;
+    top: 0;
+    width: 100%;
+    position: absolute;
+    flex-wrap: wrap;
+
+}
+nav li{
+    grid-area: nav;
+    text-align:center;
+    display: grid;
+    align-items: stretch;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    
+}
+
+.wrapper{
+    background-color: rgb(131, 0, 0);
+    display:grid;
+    "header"
+    "nav"
+    "main"
+    "footer"
+}
