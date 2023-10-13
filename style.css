@@ -1,27 +1,39 @@
+
 header{
+    grid-area:hd;
+    display: grid;
     color: Gold;
-    grid-area: header;
+    border: 3px solid gold;
     top: 0;
     width: 100%;
-    position: absolute;
-    flex-wrap: wrap;
-
 }
-nav li{
-    grid-area: nav;
+nav{
+    grid-area: nv;
+    border: 3px solid red;
+    position: fixed;
+    grid-template-columns: 1fr 1fr 1fr;
     text-align:center;
     display: grid;
-    align-items: stretch;
-    grid-template-columns: 1fr 1fr 1fr;
-
-    
+    align-items: stretch; 
 }
-
+main{
+grid-area: mn;
+border: 3px solid blue;
+display: grid;
+}
+footer{
+    grid-area:ft;
+    border: 3px solid green;
+    display: grid;
+}
 .wrapper{
-    background-color: rgb(131, 0, 0);
     display:grid;
-    "header"
-    "nav"
-    "main"
-    "footer"
+    border: 3px solid black;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas: 
+    "hd"
+    "nv"
+    "mn" 
+    "ft";
 }
