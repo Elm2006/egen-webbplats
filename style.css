@@ -2,38 +2,51 @@
 header{
     grid-area:hd;
     display: grid;
-    color: Gold;
-    border: 3px solid gold;
+    background-color: rgb(215, 4, 12);
+    color: rgb(249,221,5);
     top: 0;
     width: 100%;
+    grid-template-columns: 1fr 1fr 4fr ;
+}
+h1{
+    text-align: center;
+    margin-top: 100px;
 }
 nav{
     grid-area: nv;
-    border: 3px solid red;
-    position: fixed;
-    grid-template-columns: 1fr 1fr 1fr;
-    text-align:center;
+    background-color: rgb(249,221,5);
+}
+nav > ul{
     display: grid;
-    align-items: stretch; 
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: stretch;
+}
+nav li{
+    text-align:center;
+    list-style-type: none;
+    text-decoration: none;
+    align-self: stretch;
+    display: grid;
 }
 main{
 grid-area: mn;
-border: 3px solid blue;
 display: grid;
 }
 footer{
     grid-area:ft;
-    border: 3px solid green;
     display: grid;
 }
 .wrapper{
     display:grid;
-    border: 3px solid black;
-    grid-template-columns: 1fr;
-    grid-auto-rows: minmax(100px, auto);
+    width: 100%;
+    height: 100%;
+    grid-template-rows: 100px 80 px auto 80px;
     grid-template-areas: 
     "hd"
     "nv"
     "mn" 
     "ft";
+}
+.logo{
+height: 250px;
 }
