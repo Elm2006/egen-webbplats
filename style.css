@@ -3,43 +3,48 @@ header{
     grid-area:hd;
     display: grid;
     color: rgb(249,221,5);
-    top: 0;
-    width: 100%;
     grid-template-columns: 2fr auto 3fr ;
-}
+}/*Den här koden lägger till header i wrapper, visas som grid, har text färgen rgb(249,221,5) och delar upp headern i 3 delar med storlekarna 2fr, autop och 3 fr*/
 h1{
     text-align: center;
     margin-top: 100px;
     font-weight: bold;
     font-size: 50px;
-}
+}/*Den här koden fixar texten i headern, Centrerar den i den delen av headern, margin top bildar ett uttryme från topen, texten blir fetstil och storleken på texten blir 50px*/
 nav{
     grid-area: nv;
     background-color: rgb(215, 4, 12);
     border: 4px solid rgb(167, 4, 12);
-}
+}/*Den här koden lägger till nav i wrappern, gör backgrundsfärgen rgb(215, 4, 12), skapar en border runt nav som är 4px ifylld och i färgen rgb(167, 4, 12)*/
 nav > ul{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: stretch;
-}
+}/*Den här koden gör ul till ett barn av nav, visas som grid, är uppdelad i 3 delerm med samma storlek, text i naven blir stretch*/
 nav li{
     text-align:center;
     align-self: stretch;
     display: grid;
     
-}
+}/*Den här koden gör nav och li texten centrerad, blir stretch, visas som grid*/
 li:hover{
     text-decoration: underline rgb(249,221,5);
     filter: brightness(75%)
-}
+}/*Den här koden gör att när muspekarenn är över li blir texten understrycken, i färgen rgb(249,221,5), ljusstyrkan på färgen blir 75%*/
 a{
     list-style-type: none;
     text-decoration: none;
     color: rgb(249,221,5);
     font-size: 30px;
     font-weight: bold;
-}
+}/*Den här koden gör att a tappar list stil och text dekoration, byter färg till rgb(249,221,5), text strolek 30px, texten blir fetstil*/
+a>p{
+    list-style-type: none;
+    text-decoration: none;
+    color: rgb(249,221,5);
+    font-size: 30px;
+    font-weight: bold;
+}/*Den här koden gör att alla p som är barn av a inte har någon stil och text dekoration, färgen blir rgb(249,221,5), textstorlek blir 30 px och texten blir fetstil*/
 main{
 grid-area: mn;
 display: grid;
@@ -49,9 +54,6 @@ footer{
     display: grid;
     background-color: rgb(215, 4, 12);
     border:4px rgb(167, 4, 12) solid;
-    text-align: center;
-    color: rgb(249,221,5);
-    height: 50px;
 }
 .wrapper{
     display:grid;
@@ -72,8 +74,10 @@ table, td, th{
     border-collapse: collapse;
 }
 caption{
+    margin-top: 20px;
     font-weight: bold;
     font-size: 35px;
+    color: rgb(215, 4, 12);
 }
 th{
     background-color: rgb(249,221,5);
@@ -89,18 +93,21 @@ tr:nth-child(n+2):nth-child(-n+14){
 }
 tr:nth-child(15){
     background-color: rgb(215, 4, 12);
+    color: white;
 }
 tr:nth-child(n+16):nth-child(-n+17){
     background-color: rgb(249,221,5);
 }
 tr:nth-child(n+18):nth-child(-n+19){
     background-color: rgb(215, 4, 12);
+    color: white;
 }
 tr:nth-child(n+20):nth-child(-n+22){
     background-color: rgb(249,221,5);
 }
 tr:nth-child(23){
     background-color: rgb(215, 4, 12);
+    color: white;
 }
 tr:nth-child(24){
     background-color: rgb(249,221,5);
@@ -109,10 +116,20 @@ tr:nth-child(odd){
     filter:brightness(80%)
 }
 html{
-    background-color: rgb(253, 229, 229);
     color: black;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvg5vaUta7zwoC0TMNa60g7zPsOMsLPHoa4g&usqp=CAU');
+    background-size: 100%;
 }
 .table{
     text-align: center;
     font-size: 20px;
+}
+p{
+    color: white;
+}
+footer>p{
+    color: rgb(249,221,5);
+}
+h2{
+    color:white;
 }
