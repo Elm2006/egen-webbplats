@@ -48,13 +48,13 @@ a>p{
 main{
 grid-area: mn;
 display: grid;
-}
+}/*Den här koden lägger till main i wrapper och visas som grid*/
 footer{
     grid-area:ft;
     display: grid;
     background-color: rgb(215, 4, 12);
     border:4px rgb(167, 4, 12) solid;
-}
+}/*Den här koden lägger till footer i wrapper, gör så footer visas som grid, sätter backgrunds färg till rgb(215, 4,23), gör en border som är 4px tjock, i färgen rgb(167, 4,12) och den är hel*/
 .wrapper{
     display:grid;
     width: 100%;
@@ -65,71 +65,71 @@ footer{
     "nv"
     "mn" 
     "ft";
-}
+}/*Den här koden gör att wrapper visas som gird, gör storleken 100%, lägger till en kolumn som är auto stor, lägger till header, nav, main, footer, som saker under wrapper*/
 .logo{
 height: 250px;
-}
+}/*Den här koden gör min logga i bredden 250px*/
 table, td, th{
     border:1px black solid;
     border-collapse: collapse;
-}
+}/*Den här koden gör tabellen, celldata, rubrikerna ha en border som är 1px, svart och hel. Koden tar coskå bort borders ifall de är precis jämnte varandra*/
 caption{
     margin-top: 20px;
     font-weight: bold;
     font-size: 35px;
     color: rgb(215, 4, 12);
-}
+}/*Den häer koden gör titeln på tabel ha 20px avstånd till toppen, texten i fetstil, textstorlek 35px och i färgen rgb(215, 4, 12)*/
 th{
     background-color: rgb(249,221,5);
     border: 2px solid black;
     font-weight: bold;
     text-decoration: underline;
-}
+}/*Den här koden gör tabellrubrikern ha backgrunds färgen rgb(249,221,5), ha en border som är 2px svart och hel, texten fetstil och understruken text*/
 td:nth-child(2), td:nth-child(10){
     font-weight: bold;
-}
+}/*Den här koden gör alla tabellceller på kolumn 2 och 10 att vara fetstil*/
 tr:nth-child(n+2):nth-child(-n+14){
     background-color: rgb(249,221,5);
-}
+}/*Den här koden göra alla tabellrader mellan 2 och 14 att vara i backgrundsfärgen rgb(249,221,5)*/
 tr:nth-child(15){
     background-color: rgb(215, 4, 12);
     color: white;
-}
+}/*Den här koden göra alla tabellrad 15 att vara i backgrundsfärgen rgb(215, 4, 12) och textfärgen vit*/
 tr:nth-child(n+16):nth-child(-n+17){
     background-color: rgb(249,221,5);
-}
+}/*Den här koden göra alla tabellrader mellan 16 och 17 att vara i backgrundsfärgen rgb(249,221,5)*/
 tr:nth-child(n+18):nth-child(-n+19){
     background-color: rgb(215, 4, 12);
     color: white;
-}
+}/*Den här koden göra alla tabellrader mellan 18 och 19 att vara i backgrundsfärgen rgb(215, 4, 12) och textfärgen vit*/
 tr:nth-child(n+20):nth-child(-n+22){
     background-color: rgb(249,221,5);
-}
+}/*Den här koden göra alla tabellrader mellan 20 och 22 att vara i backgrundsfärgen rgb(249,221,5)*/
 tr:nth-child(23){
     background-color: rgb(215, 4, 12);
     color: white;
-}
+}/*Den här koden göra alla tabellrad 123 att vara i backgrundsfärgen rgb(215, 4, 12) och textfärgen vit*/
 tr:nth-child(24){
     background-color: rgb(249,221,5);
-}
+}/*Den här koden göra alla tabellrad 24 att vara i backgrundsfärgen rgb(249,221,5)*/
 tr:nth-child(odd){
     filter:brightness(80%)
-}
+}/*Den här koden göra alla udda tabellrader att vara i ljustryka 80%*/
 html{
-    color: black;
     background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvg5vaUta7zwoC0TMNa60g7zPsOMsLPHoa4g&usqp=CAU');
     background-size: 100%;
-}
+    color:white;
+}/*Den här koden gör att min backgrund sätt till en bild url och ska vara över hela webbplatsen den gör också all default text i färgen vit*/
 .table{
     text-align: center;
     font-size: 20px;
-}
-p{
-    color: white;
-}
+}/*Den här koden att tabellens undertext är centrerad och i textstorlek 20px*/
 footer>p{
     color: rgb(249,221,5);
-}
-h2{
-    color:white;
-}
+}/*Den här koden sätter alla p under footer i färgen rgb(249,221,5)*/
+.historia{
+    grid-template-columns: 2fr 1fr 1fr;
+}/*Den här koden lägger in en klass i main historia som delar upp sidan i fraktions*/
+section>img{
+    border:2px rgb(249,221,5) solid;
+}/*Den här koden lägger in en border runt bilder i mina sektioner i färgen rgb(249,221,5) 2px bred och hel*/
